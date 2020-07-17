@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Startup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+   <!-- the  nav buttone  script -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- nav button script -->
+    <!-- style for nav bar -->
+   <link rel="stylesheet" href="styles.css">
+    <!-- end of nav -->
+     <!-- css for header -->
+     <style>
+      <!-- *{padding: 0; margin: 0; box-sizing: border-box;} -->
+      <!-- body{height: 900px;} -->
+      header {
+        background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+      }
+      header .overlay{
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #333;
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+        
+      }
+      
+      .h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
+        margin-bottom: 30px;
+      }
+      
+       
+      .h3{
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 50px;
+        font-size: 35px;
+      }
+      .h4{
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 50px;
+        font-size: 25px;
+      }
+      
+      .but {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #333;
+        background: #fff;
+        margin-bottom: 50px;
+        box-shadow: 0 3px 20px 0 #0000003b;
+      }
+      .button:hover{
+        cursor: pointer;
+      }
+     </style>
+<!-- style of cards1 -->
+     <style>
+      * {
+        box-sizing: border-box;
+      }
+     
+      
+      .cardss {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 30px;
+        border: 20px;
+        text-decoration: aliceblue;
+      }
+      
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+     </style>
+<!-- style of 4 cards2 -->
+     <style>@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+      .ggg {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+     }
+      .ch3 {
+        color: #262626;
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 4px;
+     }
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #666;
+     }
+      p.small {
+        font-size: 14px;
+     }
+      .go-corner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        background-color: #00838d;
+        border-radius: 0 4px 0 32px;
+     }
+      .go-arrow {
+        margin-top: -4px;
+        margin-right: -4px;
+        color: white;
+        font-family: courier, sans;
+     }
+      .card4 {
+        display: block;
+        top: 0px;
+        position: relative;
+        max-width: 262px;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 32px 24px;
+        margin: 12px;
+        text-decoration: none;
+        overflow: hidden;
+        border: 1px solid #ccc;
+     }
+      .card4 .go-corner {
+        background-color: #00838d;
+        height: 100%;
+        width: 16px;
+        padding-right: 9px;
+        border-radius: 0;
+        transform: skew(6deg);
+        margin-right: -36px;
+        align-items: start;
+        background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+     }
+      .card4 .go-arrow {
+        transform: skew(-6deg);
+        margin-left: -2px;
+        margin-top: 9px;
+        opacity: 0;
+     }
+      .card4:hover {
+        border: 1px solid #cd3d73;
+     }
+      .card4 h3 {
+        margin-top: 8px;
+     }
+      .card4:hover .go-corner {
+        margin-right: -12px;
+     }
+      .card4:hover .go-arrow {
+        opacity: 1;
+     }
+      </style>
+<!-- style of footer -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+font-family: Roboto;
+}
+.footer-distributed {
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: normal 16px sans-serif;
+padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+color: #8f9296;
+font-size: 14px;
+margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+font-size: 18px;
+font-weight: bold;
+color: #ffffff;
+margin: 0 0 10px;
+padding: 0;
+transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+display: inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: inherit;
+transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+content: "·";
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+.footer-distributed .footer-right {
+float: right;
+margin-top: 6px;
+max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color: #33383b;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-left: 3px;
+transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+.footer-distributed .footer-left, .footer-distributed .footer-right {
+  text-align: center;
+}
+.footer-distributed .footer-right {
+  float: none;
+  margin: 0 auto 20px;
+}
+.footer-distributed .footer-left p.footer-links {
+  line-height: 1.8;
+}
+}
+</style>
+<!-- end of footer -->
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Startup</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Campus Ambassador</a></li>
+        <li><a href="#">Enrolll Now</a></li>
+      </ul>
+    </nav>
+    <!-- end nav -->
+
+   <h1>this is part for supervised</h1>
+    
+
+<!--  start cards1 -->
+<div class="cardss">
+  <h1 style="color: white;">Techbeta</h1>
+  <!-- <p>Resize the browser window to see the effect.</p> -->
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <h1>Project Based Learning </h1>
+        <h3>Students tends to learn more in the experimental way. So here you will learn by doing projects.</h3>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <h1>Project Based Learning </h1>
+        <h3>Students tends to learn more in the experimental way. So here you will learn by doing projects.</h3>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h1>Project Based Learning </h1>
+        <h3>Students tends to learn more in the experimental way. So here you will learn by doing projects.</h3>
+      </div>
+  
+    </div>
+    <div class="column">
+      <div class="card">
+        <h1>Project Based Learning </h1>
+        <h3>Students tends to learn more in the experimental way. So here you will learn by doing projects.</h3>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!-- cards1 end -->
+
+<!-- header start -->
+   <header>
+    <div class="overlay">
+<h2 class="h1">Tech Beta</h2>
+<h2 class="h3">Campus Ambassador Program</h2>
+<h4 class="h4">Are you highly energetic and ambitious, be it a fest, event or any college activity on the campus? We are looking for you! Be a part of VIBEXO, represent us on your campus and enjoy a whole host of perks and incentives.</h4>
+    <br>
+    <button class="but">READ MORE</button>
+        </div>
+</header>
+<!-- header end -->
+<!--start of  4 cards2 -->
+<div class="ggg">
+ 
+  
+  
+  <a class="card4" href="#">
+    
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-19" transform="translate(-874.000000, -1729.000000)" stroke-width="1.5">
+            <g id="Group-22" transform="translate(0.000000, 1672.000000)">
+                <g id="Group-46" transform="translate(688.000000, 33.000000)">
+                    <g id="Group-42" transform="translate(166.000000, 0.000000)">
+                        <g id="Group-25" transform="translate(21.000000, 25.000000)">
+                            <g id="Group-9" transform="translate(0.000000, 17.666667)">
+                                <path d="M14,8.33306667 L14,12.3330667" id="Stroke-3" stroke="#CD3D73"></path>
+                                <polyline id="Stroke-1" stroke="#666666" points="18 4.33306667 18 12.3330667 10 12.3330667"></polyline>
+                                <polyline id="Stroke-5" stroke="#666666" points="10 5.1332 10 12.3332 2 12.3332 2 6.3332"></polyline>
+                                <polygon id="Stroke-7" stroke="#666666" points="9 6.33306667 14 0.333066667 5 0.333066667 0 6.33306667"></polygon>
+                            </g>
+                            <path d="M20,23.9997333 L14,17.9997333" id="Stroke-10" stroke="#666666"></path>
+                            <g id="Group-15" transform="translate(5.666667, 0.000000)" stroke="#666666">
+                                <polygon id="Stroke-11" points="9.28906667 7.99973333 16.3330667 -0.000266666667 7.33306667 -0.000266666667 0.289066667 7.99973333"></polygon>
+                                <path d="M24.3333333,7.99973333 L16.3333333,-0.000266666667" id="Stroke-13"></path>
+                            </g>
+                            <path d="M16,6.8148 L16,14.0001333" id="Stroke-16" stroke="#666666"></path>
+                            <polyline id="Stroke-17" stroke="#666666" points="28 5.99973333 28 23.9997333 24 23.9997333"></polyline>
+                            <path d="M8,13.9997333 L8,7.99973333" id="Stroke-19" stroke="#666666"></path>
+                            <path d="M20,8.99973333 L20,9.99973333" id="Stroke-20" stroke="#CD3D73"></path>
+                            <path d="M24,8.99973333 L24,9.99973333" id="Stroke-21" stroke="#CD3D73"></path>
+                            <path d="M20,13.9997333 L20,14.9997333" id="Stroke-22" stroke="#CD3D73"></path>
+                            <path d="M24,13.9997333 L24,14.9997333" id="Stroke-23" stroke="#CD3D73"></path>
+                            <path d="M24,18.9997333 L24,19.9997333" id="Stroke-24" stroke="#CD3D73"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+    <h3 class="ch3">title</h3>
+    <p class="small">Students tends to learn more in the experimental way. So here you will learn by doing projects.</p>
+    <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+   
+  <a class="card4" href="#">
+    
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-19" transform="translate(-874.000000, -1729.000000)" stroke-width="1.5">
+            <g id="Group-22" transform="translate(0.000000, 1672.000000)">
+                <g id="Group-46" transform="translate(688.000000, 33.000000)">
+                    <g id="Group-42" transform="translate(166.000000, 0.000000)">
+                        <g id="Group-25" transform="translate(21.000000, 25.000000)">
+                            <g id="Group-9" transform="translate(0.000000, 17.666667)">
+                                <path d="M14,8.33306667 L14,12.3330667" id="Stroke-3" stroke="#CD3D73"></path>
+                                <polyline id="Stroke-1" stroke="#666666" points="18 4.33306667 18 12.3330667 10 12.3330667"></polyline>
+                                <polyline id="Stroke-5" stroke="#666666" points="10 5.1332 10 12.3332 2 12.3332 2 6.3332"></polyline>
+                                <polygon id="Stroke-7" stroke="#666666" points="9 6.33306667 14 0.333066667 5 0.333066667 0 6.33306667"></polygon>
+                            </g>
+                            <path d="M20,23.9997333 L14,17.9997333" id="Stroke-10" stroke="#666666"></path>
+                            <g id="Group-15" transform="translate(5.666667, 0.000000)" stroke="#666666">
+                                <polygon id="Stroke-11" points="9.28906667 7.99973333 16.3330667 -0.000266666667 7.33306667 -0.000266666667 0.289066667 7.99973333"></polygon>
+                                <path d="M24.3333333,7.99973333 L16.3333333,-0.000266666667" id="Stroke-13"></path>
+                            </g>
+                            <path d="M16,6.8148 L16,14.0001333" id="Stroke-16" stroke="#666666"></path>
+                            <polyline id="Stroke-17" stroke="#666666" points="28 5.99973333 28 23.9997333 24 23.9997333"></polyline>
+                            <path d="M8,13.9997333 L8,7.99973333" id="Stroke-19" stroke="#666666"></path>
+                            <path d="M20,8.99973333 L20,9.99973333" id="Stroke-20" stroke="#CD3D73"></path>
+                            <path d="M24,8.99973333 L24,9.99973333" id="Stroke-21" stroke="#CD3D73"></path>
+                            <path d="M20,13.9997333 L20,14.9997333" id="Stroke-22" stroke="#CD3D73"></path>
+                            <path d="M24,13.9997333 L24,14.9997333" id="Stroke-23" stroke="#CD3D73"></path>
+                            <path d="M24,18.9997333 L24,19.9997333" id="Stroke-24" stroke="#CD3D73"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+    <h3>title od card</h3>
+    <p class="small">Students tends to learn more in the experimental way. So here you will learn by doing projects.</p>
+    <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+   
+  <a class="card4" href="#">
+    
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-19" transform="translate(-874.000000, -1729.000000)" stroke-width="1.5">
+            <g id="Group-22" transform="translate(0.000000, 1672.000000)">
+                <g id="Group-46" transform="translate(688.000000, 33.000000)">
+                    <g id="Group-42" transform="translate(166.000000, 0.000000)">
+                        <g id="Group-25" transform="translate(21.000000, 25.000000)">
+                            <g id="Group-9" transform="translate(0.000000, 17.666667)">
+                                <path d="M14,8.33306667 L14,12.3330667" id="Stroke-3" stroke="#CD3D73"></path>
+                                <polyline id="Stroke-1" stroke="#666666" points="18 4.33306667 18 12.3330667 10 12.3330667"></polyline>
+                                <polyline id="Stroke-5" stroke="#666666" points="10 5.1332 10 12.3332 2 12.3332 2 6.3332"></polyline>
+                                <polygon id="Stroke-7" stroke="#666666" points="9 6.33306667 14 0.333066667 5 0.333066667 0 6.33306667"></polygon>
+                            </g>
+                            <path d="M20,23.9997333 L14,17.9997333" id="Stroke-10" stroke="#666666"></path>
+                            <g id="Group-15" transform="translate(5.666667, 0.000000)" stroke="#666666">
+                                <polygon id="Stroke-11" points="9.28906667 7.99973333 16.3330667 -0.000266666667 7.33306667 -0.000266666667 0.289066667 7.99973333"></polygon>
+                                <path d="M24.3333333,7.99973333 L16.3333333,-0.000266666667" id="Stroke-13"></path>
+                            </g>
+                            <path d="M16,6.8148 L16,14.0001333" id="Stroke-16" stroke="#666666"></path>
+                            <polyline id="Stroke-17" stroke="#666666" points="28 5.99973333 28 23.9997333 24 23.9997333"></polyline>
+                            <path d="M8,13.9997333 L8,7.99973333" id="Stroke-19" stroke="#666666"></path>
+                            <path d="M20,8.99973333 L20,9.99973333" id="Stroke-20" stroke="#CD3D73"></path>
+                            <path d="M24,8.99973333 L24,9.99973333" id="Stroke-21" stroke="#CD3D73"></path>
+                            <path d="M20,13.9997333 L20,14.9997333" id="Stroke-22" stroke="#CD3D73"></path>
+                            <path d="M24,13.9997333 L24,14.9997333" id="Stroke-23" stroke="#CD3D73"></path>
+                            <path d="M24,18.9997333 L24,19.9997333" id="Stroke-24" stroke="#CD3D73"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+    <h3> crad name</h3>
+    <p class="small">Students tends to learn more in the experimental way. So here you will learn by doing projects.</p>
+    <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+   
+  <a class="card4" href="#">
+    
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-19" transform="translate(-874.000000, -1729.000000)" stroke-width="1.5">
+            <g id="Group-22" transform="translate(0.000000, 1672.000000)">
+                <g id="Group-46" transform="translate(688.000000, 33.000000)">
+                    <g id="Group-42" transform="translate(166.000000, 0.000000)">
+                        <g id="Group-25" transform="translate(21.000000, 25.000000)">
+                            <g id="Group-9" transform="translate(0.000000, 17.666667)">
+                                <path d="M14,8.33306667 L14,12.3330667" id="Stroke-3" stroke="#CD3D73"></path>
+                                <polyline id="Stroke-1" stroke="#666666" points="18 4.33306667 18 12.3330667 10 12.3330667"></polyline>
+                                <polyline id="Stroke-5" stroke="#666666" points="10 5.1332 10 12.3332 2 12.3332 2 6.3332"></polyline>
+                                <polygon id="Stroke-7" stroke="#666666" points="9 6.33306667 14 0.333066667 5 0.333066667 0 6.33306667"></polygon>
+                            </g>
+                            <path d="M20,23.9997333 L14,17.9997333" id="Stroke-10" stroke="#666666"></path>
+                            <g id="Group-15" transform="translate(5.666667, 0.000000)" stroke="#666666">
+                                <polygon id="Stroke-11" points="9.28906667 7.99973333 16.3330667 -0.000266666667 7.33306667 -0.000266666667 0.289066667 7.99973333"></polygon>
+                                <path d="M24.3333333,7.99973333 L16.3333333,-0.000266666667" id="Stroke-13"></path>
+                            </g>
+                            <path d="M16,6.8148 L16,14.0001333" id="Stroke-16" stroke="#666666"></path>
+                            <polyline id="Stroke-17" stroke="#666666" points="28 5.99973333 28 23.9997333 24 23.9997333"></polyline>
+                            <path d="M8,13.9997333 L8,7.99973333" id="Stroke-19" stroke="#666666"></path>
+                            <path d="M20,8.99973333 L20,9.99973333" id="Stroke-20" stroke="#CD3D73"></path>
+                            <path d="M24,8.99973333 L24,9.99973333" id="Stroke-21" stroke="#CD3D73"></path>
+                            <path d="M20,13.9997333 L20,14.9997333" id="Stroke-22" stroke="#CD3D73"></path>
+                            <path d="M24,13.9997333 L24,14.9997333" id="Stroke-23" stroke="#CD3D73"></path>
+                            <path d="M24,18.9997333 L24,19.9997333" id="Stroke-24" stroke="#CD3D73"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+    <h3> title</h3>
+    <p class="small">Students tends to learn more in the experimental way. So here you will learn by doing projects.</p>
+    <div class="dimmer"></div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+  
+</div>
+<!-- end of 4 cards2 -->
+
+<!-- start of footer -->
+<footer class="footer-distributed">
+
+  <div class="footer-right">
+
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+
+  </div>
+
+  <div class="footer-left">
+
+    <p class="footer-links">
+      <a class="link-1" href="#">Home</a>
+
+      <a href="#">Blog</a>
+
+      <!-- <a href="#">Pricing</a> -->
+
+      <a href="#">About</a>
+
+      <a href="#">Faq</a>
+
+      <a href="#">Contact</a>
+    </p>
+
+    <p>Tech beta &copy; 2015</p>
+  </div>
+
+</footer>
+<!-- end of footer -->
+    
+  
+   <!-- bootstrap links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
+ 
